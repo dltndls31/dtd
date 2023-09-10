@@ -55,20 +55,3 @@ postForm.addEventListener('submit', (e) => {
     deleteButton.addEventListener('click', (e) => {
         postList.removeChild(postDiv)
     })
-
-    // 심화 과제: 즐겨찾기 버튼
-    const favoriteButton = document.createElement('button')
-    favoriteButton.className = 'favorite'
-    favoriteButton.textContent = '즐겨찾기'
-    favoriteButton.addEventListener('click', () => {
-        postList.insertBefore(postDiv, postList.firstChild)
-    })
-
-    postDiv.appendChild(editButton)
-    postDiv.appendChild(deleteButton)
-    postDiv.appendChild(favoriteButton)
-    postList.insertBefore(postDiv, postList.firstChild)
-
-    postTitleInput.value = ''
-    postContentInput.value = ''
-})
