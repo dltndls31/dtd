@@ -48,10 +48,3 @@ postForm.addEventListener('submit', (e) => {
         postDiv.appendChild(saveButton)
         postDiv.removeChild(editButton)
     })
-
-    const deleteButton = document.createElement('button')
-    deleteButton.className = 'delete'
-    deleteButton.textContent = '삭제'
-    deleteButton.addEventListener('click', (e) => {
-        postList.removeChild(postDiv)
-    })
